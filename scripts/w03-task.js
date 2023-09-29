@@ -65,7 +65,7 @@ document.getElementById("year").textContent = current_Year;
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
 let numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13];
-document.getElementById("array").value = numbers
+document.getElementById("array").innerHTML = numbers
 /* Output Odds Only Array */
 document.querySelector("#odds").innerHTML = numbers.filter(number => number % 2 === 1);
 
