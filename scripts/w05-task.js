@@ -73,10 +73,10 @@ const sortBy = (temple) => {
 
 
 }; */
+
+
 const sortBy = (temples) => {
     reset();
-    var startDate = "1950-01-01"
-
     switch(document.getElementById("sortBy").value){
         case "utah":
             displayTemples(temples.filter(temple => temple.location.includes("Utah")));
@@ -85,7 +85,7 @@ const sortBy = (temples) => {
             displayTemples(temples.filter(temple => !temple.location.includes("Utah")));
             break;
         case "older":
-            displayTemples(temples.filter(temple => temple.dedication.reduce(new Date(1950,1,0))));
+            displayTemples(temples.filter(temple => valueof(temple.dedication) < valueof(new Date(1950,1,0))));
             break;
         case "all":
            displayTemples(temples);
