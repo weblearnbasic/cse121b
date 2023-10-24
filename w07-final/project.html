@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSE 121b | W07: Programming Tasks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+  <nav>
+    <ul id="menu">
+      <li><a id="toggleMenu">&equiv;</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="w01-task.html">W1 Task</a></li>
+      <li><a href="w03-task.html">W3 Task</a></li>
+      <li><a href="w04-task.html">W4 Task</a></li>
+      <li><a href="w05-task.html">W5 Task</a></li>
+      <li><a href="project.html" class="active">Project</a></li>
+    </ul>
+  </nav>
+  <main id="gridly">
+    <h1>W07: Programming Tasks</h1>
+    <h2>Maybelline Makeup Catalog</h2>
+
+    <select id="sortBy" title="Choose a data filter.">
+      <option value="" disabled selected>Filter Makeup</option>
+      <option value="bronzer">Bronzers</option>
+      <option value="lip">Lip Products</option>
+      <option value="foundation">Foundation</option>
+      <option value="blush">Blush</option>
+      <option value="mascara">Mascara</option>
+      <option value="eyeliner">Eyeliner</option>
+      <option value="pricerange">Filter by Price</option>
+    </select>
+    <!--<div class="container">
+      <img src="one.api_featured_image" alt="one.description" id="img">
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div> -->
+    <div id="maybelline">
+    </div>
+  </main>
+
+
+  <footer>
+    &copy;<span id="year"></span> | Week 07 - Final Project | CSE 121b
+  </footer>
+  <script src="project.js"></script>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+  <script src="project.js" type="module"></script>
+</body>
+
+</html>

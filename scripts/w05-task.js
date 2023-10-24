@@ -16,11 +16,11 @@ temples.forEach(temple => {
     img.setAttribute("alt", temple.location);
     
     article.appendChild(templeName);
-    article.appendChild(img);
+    article.appendChild(img); 
     
     templesElement.appendChild(article); 
 });
-}
+};
 
 
 /* async getTemples Function using fetch()*/
